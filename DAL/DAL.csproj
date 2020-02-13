@@ -44,61 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="EF\DecagonModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DecagonModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\DecagonModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\DecagonModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DecagonModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="EF\MSreplication_options.cs">
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\spt_fallback_db.cs">
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\spt_fallback_dev.cs">
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\spt_fallback_usg.cs">
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EF\spt_monitor.cs">
-      <DependentUpon>DecagonModel.tt</DependentUpon>
-    </Compile>
+    <Compile Include="EF\FacebookModel.cs" />
+    <Compile Include="EF\testDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="EF\DecagonModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DecagonModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="EF\DecagonModel.edmx.diagram">
-      <DependentUpon>DecagonModel.edmx</DependentUpon>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="EF\DecagonModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DecagonModel.edmx</DependentUpon>
-      <LastGenOutput>DecagonModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="EF\DecagonModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DecagonModel.edmx</DependentUpon>
-      <LastGenOutput>DecagonModel.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EntityFramework">
